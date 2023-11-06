@@ -1,8 +1,7 @@
 from flask import Flask, request, jsonify
 
+
 app = Flask(__name__)
-
-
 @app.route("/somar", methods=["POST"])
 def somar():
     dados = request.json
